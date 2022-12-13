@@ -7,6 +7,7 @@ class Ssr < Formula
   version "0.5.1001"
   sha256 "8ba002bc68ac2e683bf06427537ef8390b43cd053b8c3051dbe6c25a52f34d55"
   license "GPL-3.0-or-later"
+  revision 1
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
@@ -19,6 +20,7 @@ class Ssr < Formula
   depends_on "jack"
   depends_on "libsndfile"
   depends_on "qt@5"
+  depends_on "SoundScapeRenderer/ssr/libmysofa"
   depends_on "vrpn"
   depends_on "websocketpp"
 
@@ -38,6 +40,7 @@ class Ssr < Formula
       --enable-ip-interface
       --enable-polhemus
       --enable-razor
+      --enable-sofa
       --enable-vrpn
       --enable-websocket-interface
     ]
