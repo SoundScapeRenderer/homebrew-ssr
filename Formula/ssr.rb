@@ -4,10 +4,9 @@ class Ssr < Formula
   url "https://output.circle-artifacts.com/output/job/cd86f84f-9318-48cf-8ac0-4a8ab5a2a975/artifacts/0/ssr-0.5.0-257-g3dd1f73.tar.gz"
   # This is just needed for initial testing with dev tarballs,
   # it can be removed once ssr-0.6.0.tar.gz is used:
-  version "0.5.1001"
+  version "0.5.1002"
   sha256 "8ba002bc68ac2e683bf06427537ef8390b43cd053b8c3051dbe6c25a52f34d55"
   license "GPL-3.0-or-later"
-  revision 1
 
   depends_on "autoconf" => :build
   depends_on "automake" => :build
