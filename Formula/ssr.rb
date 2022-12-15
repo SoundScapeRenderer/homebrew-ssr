@@ -8,9 +8,6 @@ class Ssr < Formula
   sha256 "8ba002bc68ac2e683bf06427537ef8390b43cd053b8c3051dbe6c25a52f34d55"
   license "GPL-3.0-or-later"
 
-  depends_on "autoconf" => :build
-  depends_on "automake" => :build
-  depends_on "libtool" => :build
   depends_on "pkg-config" => :build
   depends_on "asio"
   depends_on "ecasound"
