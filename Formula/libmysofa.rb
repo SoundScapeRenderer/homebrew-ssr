@@ -4,7 +4,7 @@ class Libmysofa < Formula
   url "https://github.com/hoene/libmysofa/archive/refs/tags/v1.3.1.tar.gz"
   sha256 "a8a8cbf7b0b2508a6932278799b9bf5c63d833d9e7d651aea4622f3bc6b992aa"
   license "BSD-3-Clause"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/libmysofa-1.3.1_1"
@@ -14,12 +14,11 @@ class Libmysofa < Formula
   end
 
   depends_on "cmake" => :build
-  depends_on "cunit" => :build
 
   uses_from_macos "zlib"
 
   def install
-    system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    system "cmake", "-S", ".", "-B", "build", *std_cmake_args, "-D BUILD_TESTS=OFF"
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
   end
