@@ -1,8 +1,6 @@
 # Homebrew Tap for the SoundScape Renderer
 
-WARNING: This is work in progress!
-
-See http://spatialaudio.net/ssr/ for currently available installation options.
+See http://spatialaudio.net/ssr/ for all available installation options.
 
 
 ## How do I install these formulae?
