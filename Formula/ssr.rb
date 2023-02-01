@@ -5,6 +5,13 @@ class Ssr < Formula
   sha256 "a7d48047e6bd884aa25ae9a96f97efa57aed26d65967ee5e56a13945f34d35e1"
   license "GPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/ssr-0.6.0"
+    sha256 monterey:     "0ddd24ae5109bfcd4872302fadac5c6cfe61c96fc265c9a77353e7050fac13c0"
+    sha256 big_sur:      "3b82c1b0dd833d8ab20e1b39a7c9f2c5b88503009e40d83637521a4a601b58bb"
+    sha256 x86_64_linux: "06e98b2218dab493659599dd7416694d81e319e1cf7374718e47cb6dc665681c"
+  end
+
   depends_on "pkg-config" => :build
   depends_on "asio"
   depends_on "ecasound"
