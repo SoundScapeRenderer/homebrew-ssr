@@ -4,7 +4,7 @@ class Libmysofa < Formula
   url "https://github.com/hoene/libmysofa/archive/refs/tags/v1.3.1.tar.gz"
   sha256 "a8a8cbf7b0b2508a6932278799b9bf5c63d833d9e7d651aea4622f3bc6b992aa"
   license "BSD-3-Clause"
-  revision 2
+  revision 3
 
   bottle do
     root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/libmysofa-1.3.1_2"
