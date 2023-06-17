@@ -4,6 +4,7 @@ class Ssr < Formula
   url "https://github.com/SoundScapeRenderer/ssr/releases/download/0.6.0/ssr-0.6.0.tar.gz"
   sha256 "a7d48047e6bd884aa25ae9a96f97efa57aed26d65967ee5e56a13945f34d35e1"
   license "GPL-3.0-or-later"
+  revision 1
 
   bottle do
     root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/ssr-0.6.0"
