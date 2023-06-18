@@ -10,6 +10,9 @@ jobs:
       matrix:
         os: [ubuntu-22.04, macos-13, macos-12, macos-11]
     runs-on: ${{ matrix.os }}
+    # https://github.com/Homebrew/homebrew-test-bot/issues/946:
+    env:
+      HOMEBREW_NO_INSTALL_FROM_API: 1
     steps:
       - name: Set up Homebrew
         id: set-up-homebrew
