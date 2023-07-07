@@ -1,10 +1,9 @@
 class Ssr < Formula
   desc "SoundScape Renderer: A tool for real-time spatial audio reproduction"
   homepage "http://spatialaudio.net/ssr/"
-  url "https://github.com/SoundScapeRenderer/ssr/releases/download/0.6.0/ssr-0.6.0.tar.gz"
-  sha256 "a7d48047e6bd884aa25ae9a96f97efa57aed26d65967ee5e56a13945f34d35e1"
+  url "https://github.com/SoundScapeRenderer/ssr/releases/download/0.6.1/ssr-0.6.1.tar.gz"
+  sha256 "392a13ecbf86f980be76a31884a83ab762e577c1c829cb5e744f708542bc5bdb"
   license "GPL-3.0-or-later"
-  revision 1
 
   bottle do
     root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/ssr-0.6.0_1"
@@ -22,6 +21,7 @@ class Ssr < Formula
   depends_on "jack"
   depends_on "libsndfile"
   depends_on "qt@5"
+  depends_on "SoundScapeRenderer/ssr/asdf"
   depends_on "SoundScapeRenderer/ssr/libmysofa"
   depends_on "vrpn"
   depends_on "websocketpp"
@@ -35,6 +35,7 @@ class Ssr < Formula
     # Make sure all expected features are switched on:
     features = %w[
       --enable-browser-gui
+      --enable-dynamic-asdf
       --enable-ecasound
       --enable-fudi-interface
       --enable-gui
