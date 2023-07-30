@@ -31,7 +31,6 @@ class Ssr < Formula
   end
 
   def install
-    ENV["CPPFLAGS"] = "-I#{HOMEBREW_PREFIX}/include/libecasoundc"
     # Make sure all expected features are switched on:
     features = %w[
       --enable-browser-gui
