@@ -1,10 +1,10 @@
 class Ssr < Formula
   desc "SoundScape Renderer: A tool for real-time spatial audio reproduction"
   homepage "http://spatialaudio.net/ssr/"
-  url "https://github.com/SoundScapeRenderer/ssr/releases/download/0.6.1/ssr-0.6.1.tar.gz"
-  sha256 "392a13ecbf86f980be76a31884a83ab762e577c1c829cb5e744f708542bc5bdb"
+  url "https://output.circle-artifacts.com/output/job/935a8b96-f52a-4284-b016-b9291b1278a8/artifacts/0/ssr-0.6.1-52-g1dcd55e.tar.gz"
+  version "0.6.1.1"
+  sha256 "c79c8e792d8370f64affea60750482bb395d22afe162def18cebc79515798af9"
   license "GPL-3.0-or-later"
-  revision 2
 
   bottle do
     root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/ssr-0.6.1_2"
