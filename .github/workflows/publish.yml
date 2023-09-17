@@ -7,9 +7,6 @@ jobs:
   pr-pull:
     if: contains(github.event.pull_request.labels.*.name, 'pr-pull')
     runs-on: ubuntu-22.04
-    # https://github.com/Homebrew/homebrew-test-bot/issues/946:
-    env:
-      HOMEBREW_NO_INSTALL_FROM_API: 1
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
