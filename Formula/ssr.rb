@@ -1,8 +1,8 @@
 class Ssr < Formula
   desc "SoundScape Renderer: A tool for real-time spatial audio reproduction"
   homepage "http://spatialaudio.net/ssr/"
-  url "https://github.com/SoundScapeRenderer/ssr/releases/download/0.6.1/ssr-0.6.1.tar.gz"
-  sha256 "392a13ecbf86f980be76a31884a83ab762e577c1c829cb5e744f708542bc5bdb"
+  url "https://output.circle-artifacts.com/output/job/24c2adaf-bd86-435a-8067-da4f0fc0216e/artifacts/0/ssr-0.5.0-314-g7ce5325.tar.gz"
+  sha256 "217fdd5564e3e6756c81891bc369da7e95df3f550f9d76732c5fbbbe15bb508b"
   license "GPL-3.0-or-later"
 
   bottle do
@@ -31,7 +31,6 @@ class Ssr < Formula
   end
 
   def install
-    ENV["CPPFLAGS"] = "-I#{HOMEBREW_PREFIX}/include/libecasoundc"
     # Make sure all expected features are switched on:
     features = %w[
       --enable-browser-gui
