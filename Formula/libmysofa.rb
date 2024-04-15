@@ -7,10 +7,11 @@ class Libmysofa < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/libmysofa-1.3.2"
-    sha256 ventura:      "ca6327ed10d79980c9805819fca305b243453cefc38539fcb160bed0488265aa"
-    sha256 monterey:     "ffda54674d633349c60d31bbf1622c4454ace4769fbb5ac20a989123e6e035f5"
-    sha256 x86_64_linux: "6ca07fac392340cd4c3b6ddbfc3c9f5698efe4279602b75291d87032e8c816c3"
+    root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/libmysofa-1.3.2_1"
+    sha256 arm64_sonoma: "dea4a65152cefe254ac899e2c231997d1bd36b9c0f7fbbaf82fa546a054ea448"
+    sha256 ventura:      "d4bbb3b83899ec1dc0a9dbc64e316b60157b30a57b783f3fd7942df7252cc676"
+    sha256 monterey:     "1fd5d86b7916a68d48aa913c6d29489e8e58e09e0ff2fd724117c530b4676b67"
+    sha256 x86_64_linux: "f02ff73b9886d8e1a5afd2e873d323de121ca394722a505e741455bf117ee9de"
   end
 
   depends_on "cmake" => :build
