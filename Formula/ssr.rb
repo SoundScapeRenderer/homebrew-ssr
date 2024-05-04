@@ -7,11 +7,11 @@ class Ssr < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/ssr-0.6.1"
-    sha256 ventura:      "4fdb88444b92087347d68707636162a3530121cc8945b7956b582e8ba6362619"
-    sha256 monterey:     "2034c7cedad4385db58d24a245b1f6aa0bc35c859b94f6c09b09f23b36e1240c"
-    sha256 big_sur:      "4e97b8bfcb13e575ad4a37662a7e04aeee0cc6130691c1d39df9d2bdff417a4b"
-    sha256 x86_64_linux: "383ebd444df15c810c06c03c01be489916e79e0b8ca9007ebe205d244fee8f22"
+    root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/ssr-0.6.1_1"
+    sha256 arm64_sonoma: "38274cad8a6798238aeaca41cd7a1f083838de15f9d9d72ee732d89b0522bb79"
+    sha256 ventura:      "0abafbdcdcb27080aded1a325243052f55de2343b5a160593b9b8d6900453da2"
+    sha256 monterey:     "8feb39fb7898e9c770a17080eb368dfd45b26aedf337ac9396e5382c29339e3a"
+    sha256 x86_64_linux: "3fbf3bd50726f0fa9a40e8e9c98c25e14814e1000b279700532fce81d5e57760"
   end
 
   depends_on "pkg-config" => :build
