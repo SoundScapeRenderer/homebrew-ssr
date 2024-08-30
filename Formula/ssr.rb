@@ -18,7 +18,7 @@ class Ssr < Formula
   depends_on "asio"
   depends_on "ecasound"
   depends_on "fftw"
-  depends_on "fmt" "10"
+  depends_on "fmt" => "10"
   depends_on "jack"
   depends_on "libsndfile"
   depends_on "qt@5"
