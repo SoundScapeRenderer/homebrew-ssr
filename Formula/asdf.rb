@@ -6,7 +6,7 @@ class Asdf < Formula
       tag:      "1.0.0",
       revision: "ee6147b4d89c18fcc48fd1ae3a7967e6a5ea3cc0"
   license any_of: ["MIT", "Apache-2.0"]
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/asdf-1.0.0_1"
