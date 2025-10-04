@@ -6,6 +6,9 @@ on:
       - main
   pull_request:
 
+env:
+  CMAKE_POLICY_VERSION_MINIMUM: 3.5
+
 jobs:
   test-bot:
     strategy:
