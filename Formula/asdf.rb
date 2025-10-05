@@ -3,10 +3,9 @@ class Asdf < Formula
   homepage "https://github.com/AudioSceneDescriptionFormat/asdf-rust"
   url "https://github.com/AudioSceneDescriptionFormat/asdf-rust",
       using:    :git,
-      tag:      "1.0.0",
-      revision: "ee6147b4d89c18fcc48fd1ae3a7967e6a5ea3cc0"
+      tag:      "1.1.0",
+      revision: "6b31ccb9cb040e357236723d9dc78b7bf89c1411"
   license any_of: ["MIT", "Apache-2.0"]
-  revision 2
 
   bottle do
     root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/asdf-1.0.0_1"
