@@ -20,6 +20,8 @@ class Asdf < Formula
   depends_on "rust" => :build
 
   def install
+    # for libsamplerate-sys v0.1.12, https://github.com/Prior99/libsamplerate-sys/issues/21:
+    ENV["CMAKE_POLICY_VERSION_MINIMUM"] = "3.5"
     system "cargo", "cinstall", "--prefix", prefix
   end
 
