@@ -19,6 +19,7 @@ class Libmysofa < Formula
   uses_from_macos "zlib"
 
   def install
+    ENV["CMAKE_POLICY_VERSION_MINIMUM"] = "3.5"
     system "cmake", "-S", ".", "-B", "build", *std_cmake_args, "-D BUILD_TESTS=OFF"
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
