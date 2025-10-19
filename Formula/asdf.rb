@@ -9,9 +9,9 @@ class Asdf < Formula
   revision 1
 
   bottle do
-    root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/asdf-1.1.0"
-    sha256 cellar: :any, arm64_sequoia: "cfe97183174631453fcc1ab4017ce05b7e88ffcb1f5adae946e37fab428f6231"
-    sha256 cellar: :any, arm64_sonoma:  "e4381db70b22729ce5dd83d4f9b3cf625633314b5201061df09e0d6ea0e3aed3"
+    root_url "https://github.com/SoundScapeRenderer/homebrew-ssr/releases/download/asdf-1.1.0_1"
+    sha256 cellar: :any, arm64_sequoia: "81e5b9ac33a4a505940b3e72a1222c4fab4817b9f795897bb745c992dfc7ccd8"
+    sha256 cellar: :any, arm64_sonoma:  "9705d6acc5a41e57c14dd469983a24b0a7e7d896b53f9d951ba1a1c9fc8df11a"
   end
 
   depends_on "cargo-c" => :build
